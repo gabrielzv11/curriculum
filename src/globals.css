@@ -1,0 +1,187 @@
+@import 'tailwindcss';
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	* {
+		print-color-adjust: exact;
+		-webkit-print-color-adjust: exact;
+	}
+}
+
+body {
+	font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+	/* base */
+	--primary: oklch(65.202% 0.1902 253.223);
+	--primary-foreground: oklch(0% 0 0);
+	--background: oklch(100% 0.00011 271.152);
+
+	--background-soft: oklch(91.139% 0.00661 106.776);
+	--foreground: oklch(0% 0 0);
+	--muted-foreground: oklch(0.74 0.018 264);
+
+	/* surfaces */
+	--card: oklch(26.448% 0.00003 271.152);
+	--card-border: oklch(0.95 0.02 90 / 0.08);
+	--ring: oklch(0.86 0.1 84 / 0.5);
+	--border: oklch(64.341% 0.00007 271.152 / 0.514);
+
+	--popover: oklch(29.313% 0.00003 271.152);
+	--popover-foreground: oklch(0.985 0.002 247.839);
+
+	/* chart tokens (used by RainbowButton) */
+	--chart-1: #c4a45a;
+	--chart-2: #5b7fde;
+	--chart-3: #8fb0f7;
+	--chart-4: #b08030;
+	--chart-5: #e8c97a;
+
+	/* shadcn compat */
+	--input: oklch(17.604% 0.01692 301.798);
+	--input-foreground: oklch(0.96 0.008 90);
+	--accent-foreground: oklch(0.96 0.008 90);
+
+	/* gradient tokens */
+	--gradient-vignette: oklch(0.22 0.02 268 / 0.5);
+	--gradient-vignette-hero: oklch(0.24 0.02 268 / 0.55);
+	--gradient-grid: oklch(0.95 0.02 90 / 0.06);
+	--aurora-gold: oklch(0.86 0.1 84 / 0.5);
+	--aurora-blue: oklch(0.64 0.197 253 / 0.45);
+	--aurora-gold-deep: oklch(0.7 0.11 70 / 0.4);
+}
+
+@theme inline {
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+
+	--color-background: var(--background);
+	--color-background-soft: var(--background-soft);
+	--color-foreground: var(--foreground);
+	--color-muted-foreground: var(--muted-foreground);
+
+	--color-gold: var(--gold);
+	--color-gold-bright: var(--gold-bright);
+	--color-gold-deep: var(--gold-deep);
+	--color-blue: var(--blue);
+	--color-blue-bright: var(--blue-bright);
+
+	--color-card: var(--card);
+	--color-card-border: var(--card-border);
+	--color-ring: var(--ring);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-input: var(--input);
+	--color-input-foreground: var(--input-foreground);
+	--color-accent-foreground: var(--accent-foreground);
+
+	--font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+	--font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+	--font-display: var(--font-playfair), ui-serif, Georgia, serif;
+
+	--color-border: var(--border);
+}
+
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-ExtraLightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('./assets/fonts/jakarta-sans/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
