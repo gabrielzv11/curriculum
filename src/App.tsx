@@ -123,9 +123,12 @@ function App() {
 								<Skill>Module Federation</Skill>
 								<Skill>TanStack Query</Skill>
 								<Skill>Radix UI</Skill>
+								<Skill>Material UI (MUI)</Skill>
+								<Skill>Design System</Skill>
+								<Skill>SEO</Skill>
 								<Skill>HTML5</Skill>
-								<Skill>CSS</Skill>
 								<Skill>TypeScript</Skill>
+								<Skill>Testes automatizados (Jest)</Skill>
 							</Subsection>
 
 							<div className='my-2' />
@@ -153,6 +156,8 @@ function App() {
 								<Skill>Supabase</Skill>
 								<Skill>Posthog</Skill>
 								<Skill>Sentry</Skill>
+								<Skill>Github Actions</Skill>
+								<Skill>Stripe</Skill>
 							</Subsection>
 						</Section>
 
@@ -160,8 +165,8 @@ function App() {
 							<Subsection title='ArtIux' subtitle='Criador' rangeDate='2025 - Presente' url='artiux.dev'>
 								<ol className='list-disc'>
 									<li>
-										Desenvolvi biblioteca open source de componentes UI animados para React/Next.js, com mais de 24 componentes documentados
-										— botões, selects, drawers, dialogs, formulários, calendário, progress bars;
+										Desenvolvi biblioteca open source de componentes UI animados para React/Next.js, com mais de 24 componentes
+										documentados;
 									</li>
 									<li>
 										Implementei sistema de animações com GSAP, Motion e Three.js (React Three Fiber), incluindo efeitos de ripple,
