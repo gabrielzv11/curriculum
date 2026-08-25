@@ -34,8 +34,8 @@ function App() {
 							<Contact icon={<MapPinSolid />}>
 								<span>Maceió - AL</span>
 							</Contact>
-							<Contact icon={<GithubSolid />} url='https://github.com/Dargouls'>
-								<span>github.com/Dargouls</span>
+							<Contact icon={<GithubSolid />} url='https://github.com/gabrielzv11'>
+								<span>github.com/gabrielzv11</span>
 							</Contact>
 						</div>
 					</div>
@@ -157,7 +157,65 @@ function App() {
 						</Section>
 
 						<Section title='PROJETOS'>
-							<Subsection title='Mangaba AI' subtitle='Co-desenvolvedor' rangeDate='2023 - 2023  •  205 estrelas no GitHub'>
+							<Subsection title='ArtIux' subtitle='Criador' rangeDate='2025 - Presente' url='artiux.dev'>
+								<ol className='list-disc'>
+									<li>
+										Desenvolvi biblioteca open source de componentes UI animados para React/Next.js, com mais de 24 componentes documentados
+										— botões, selects, drawers, dialogs, formulários, calendário, progress bars;
+									</li>
+									<li>
+										Implementei sistema de animações com GSAP, Motion e Three.js (React Three Fiber), incluindo efeitos de ripple,
+										partículas (tsparticles) e transições de página;
+									</li>
+									<li>
+										Construí formulários com validação usando React Hook Form + Zod, e páginas de documentação com preview ao vivo e bloco
+										de código pronto para copiar (Open Source e Open Code);
+									</li>
+									<li>
+										Utilizei Next.js 15 (Turbopack), React 19, TypeScript, Tailwind CSS 4, Radix UI e Zustand para gerenciamento de estado.
+									</li>
+								</ol>
+							</Subsection>
+						</Section>
+					</div>
+				</div>
+			</Page>
+
+			<Page>
+				<div className='grid grid-cols-2 gap-6'>
+					<div className='space-y-2'>
+						<Section title='EXPERIÊNCIA'>
+							<Subsection
+								title='Desenvolvedor Front-end'
+								subtitle='DS Consultoria Avançada em IA'
+								rangeDate='2021 - 2022'
+								url='dheiverphd.com'
+							>
+								<ol className='list-disc'>
+									<li>
+										Participei ativamente na implementação de dashboards interativos, permitindo visualização de dados de IA em tempo real e
+										facilitando a tomada de decisões com base em insights preditivos.
+									</li>
+								</ol>
+							</Subsection>
+
+							<Subsection title='Desenvolvedor Front-end' subtitle='Zenix Tech' rangeDate='2020 - 2021'>
+								<ol className='list-disc'>
+									<li>Contribuí no desenvolvimento de websites utilizando React, focando em interfaces modernas e responsivas;</li>
+									<li>Prototipei interfaces complexas com Figma, garantindo usabilidade e design centrado no usuário.</li>
+								</ol>
+							</Subsection>
+						</Section>
+					</div>
+
+					<div className='space-y-2'>
+						<Section title='PROJETOS'>
+							<Subsection
+								title='Mangaba AI'
+								subtitle='Co-desenvolvedor'
+								rangeDate='2023 - 2023  •  205 estrelas no GitHub'
+								url='github.com/Mangaba-ai/mangaba_ai'
+							>
 								<Text typography='description-2' className='mb-1'></Text>
 
 								<ol className='list-disc'>
@@ -174,26 +232,6 @@ function App() {
 						</Section>
 					</div>
 				</div>
-			</Page>
-
-			<Page>
-				<Section title='EXPERIÊNCIA'>
-					<Subsection title='Desenvolvedor Front-end' subtitle='DS Consultoria Avançada em IA' rangeDate='2021 - 2022' url='dheiverphd.com'>
-						<ol className='list-disc'>
-							<li>
-								Participei ativamente na implementação de dashboards interativos, permitindo visualização de dados de IA em tempo real e
-								facilitando a tomada de decisões com base em insights preditivos.
-							</li>
-						</ol>
-					</Subsection>
-
-					<Subsection title='Desenvolvedor Front-end' subtitle='Zenix Tech' rangeDate='2020 - 2021'>
-						<ol className='list-disc'>
-							<li>Contribuí no desenvolvimento de websites utilizando React, focando em interfaces modernas e responsivas;</li>
-							<li>Prototipei interfaces complexas com Figma, garantindo usabilidade e design centrado no usuário.</li>
-						</ol>
-					</Subsection>
-				</Section>
 			</Page>
 		</>
 	);
